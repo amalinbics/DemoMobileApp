@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoMobileApp.QuotesPage">
+    <ContentPage.Padding>
+        <OnPlatform  x:TypeArguments="Thickness" >
+            <On Platform="Android" Value="20,30,20,20"/>
+            <On Platform="WinPhone" Value=" 20, 40, 20, 20"/>
+        </OnPlatform>
+
+    </ContentPage.Padding>
+    <ContentPage.Content>
+
+        <StackLayout BindingContext="{Binding Source={x:Reference slFontSize}}" >
+            <Button Text="Next" x:Name="btnNext" Clicked="btnNext_Clicked"></Button>
+            <Label Text="{Binding Value , StringFormat='Font size is : {0:f0}' }" x:Name="lblFontSize"  />
+            <Slider x:Name="slFontSize" Value="16" Maximum="40" Minimum="16" ></Slider>
+            <Label Text="" x:Name="lblQuote" FontSize="{Binding Value}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
