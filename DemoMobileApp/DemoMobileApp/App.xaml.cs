@@ -11,7 +11,7 @@ namespace DemoMobileApp
 		{
 			InitializeComponent();
 
-			MainPage = new ImagePage();
+			MainPage = new EmbeddedImage();
 		}
 
 		protected override void OnStart ()

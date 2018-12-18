@@ -4,12 +4,29 @@
              x:Class="DemoMobileApp.ImagePage">
     <AbsoluteLayout BackgroundColor="Black">
 
-        <ActivityIndicator AbsoluteLayout.LayoutBounds="0.5,0.5,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"
-                           IsRunning="{Binding Source={x:Reference image},Path=IsLoading}"></ActivityIndicator>
-        <Image AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFit" x:Name="image"
-               Source="http://lorempixel.com/1920/1080/city/1/" >
-            
-        </Image>
         
+        <ActivityIndicator Color="White" 
+                           AbsoluteLayout.LayoutBounds="0.5,0.5,50,50" 
+                           AbsoluteLayout.LayoutFlags="PositionProportional"
+                           IsRunning="{Binding Source={x:Reference image},Path=IsLoading}"></ActivityIndicator >
+        <!--<Image x:Name="image" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFit" x:Name="image"
+               Source="http://lorempixel.com/1920/1080/city/1/" >-->
+        <Image x:Name="image" 
+               AbsoluteLayout.LayoutBounds="0,0,1,1" 
+               AbsoluteLayout.LayoutFlags="All" 
+               Aspect="AspectFit" />
+
+        <Button Image="left.png" 
+                AbsoluteLayout.LayoutBounds="0.05,0.05,100,50" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                x:Name="btnPrev" TextColor="White"
+                Clicked="btnPrev_Clicked" BackgroundColor="Transparent" ></Button>
+
+        <Button Image="right.png" 
+                AbsoluteLayout.LayoutBounds="0.9,0.05,100,50" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                x:Name="btnNext" Clicked="btnNext_Clicked" BackgroundColor="Transparent" ></Button>
+       
+
     </AbsoluteLayout>
 </ContentPage>
