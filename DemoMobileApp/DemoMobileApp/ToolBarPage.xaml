@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoMobileApp.ToolBarPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New" Icon="plus.png" Activated="ToolbarItem_Activated" Order="Primary" ></ToolbarItem>
+        <ToolbarItem Text="New" Icon="plus.png" Activated="ToolbarItem_Activated" Order="Secondary" ></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+</ContentPage>

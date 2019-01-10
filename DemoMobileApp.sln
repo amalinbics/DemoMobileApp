@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMobileApp.iOS", "DemoMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMobileApp.UWP", "DemoMobileApp\DemoMobileApp.UWP\DemoMobileApp.UWP.csproj", "{E9B90669-C1B5-48CF-8542-F794433B6AF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMobileApp", "DemoMobileApp\DemoMobileApp\DemoMobileApp.csproj", "{D2142898-B8C5-4F15-AA11-3377CB74B830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoMobileApp", "DemoMobileApp\DemoMobileApp\DemoMobileApp.csproj", "{D2142898-B8C5-4F15-AA11-3377CB74B830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
